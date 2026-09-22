@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РњРёСЂРѕРЅ | MTB Athlete & Championship Prospect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Montserrat & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0D0D0D',
+                            card: '#161616',
+                            green: '#00FF66',
+                            greenHover: '#00D655',
+                            gray: '#262626'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0D0D0D;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
+        }
+        .box-glow:hover {
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.25);
+            border-color: #00FF66;
+        }
+        .fade-in-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-brand-black text-gray-100 antialiased selection:bg-brand-green selection:text-black">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-black/90 backdrop-blur-md border-b border-brand-gray/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading font-black text-2xl tracking-wider text-white italic">
+                MIR<span class="text-brand-green">1703</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#about" class="hover:text-brand-green transition-colors">РћР±Рѕ РјРЅРµ</a>
+                <a href="#stats" class="hover:text-brand-green transition-colors">Р”РѕСЃС‚РёР¶РµРЅРёСЏ</a>
+                <a href="#sponsorship" class="hover:text-brand-green transition-colors">РРЅРІРµСЃС‚РѕСЂР°Рј</a>
+                <a href="#gallery" class="hover:text-brand-green transition-colors">Р“Р°Р»РµСЂРµСЏ</a>
+                <a href="#contacts" class="hover:text-brand-green transition-colors">РљРѕРЅС‚Р°РєС‚С‹</a>
+            </nav>
+
+            <a href="#contacts" class="bg-brand-green text-black font-bold px-5 py-2.5 rounded-none transform -skew-x-12 hover:bg-brand-greenHover transition-all shadow-[0_0_15px_rgba(0,255,102,0.4)]">
+                <span class="block transform skew-x-12 uppercase text-xs tracking-wider">РЎС‚Р°С‚СЊ СЃРїРѕРЅСЃРѕСЂРѕРј</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden border-b border-brand-gray">
+        <div class="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#00FF66_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 fade-in-element">
+                    <div class="inline-flex items-center space-x-2 bg-brand-gray/80 border border-brand-green/30 px-4 py-1.5 rounded-full">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-green animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-brand-green">MTB / Cross-Country Athlete</span>
+                    </div>
+
+                    <h1 class="font-heading font-black text-4xl sm:text-6xl lg:text-7xl uppercase italic leading-none tracking-tight">
+                        Р¦РµР»СЊ вЂ” <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-white text-glow">РЎС‚Р°С‚СЊ Р§РµРјРїРёРѕРЅРѕРј</span>
+                    </h1>
+
+                    <p class="text-gray-400 text-lg max-w-xl font-normal leading-relaxed">
+                        9 Р»РµС‚ РЅРµРїСЂРµСЂС‹РІРЅС‹С… С‚СЂРµРЅРёСЂРѕРІРѕРє, СЃРєРѕСЂРѕСЃС‚СЊ Рё РІРѕР»СЏ Рє РїРѕР±РµРґРµ. РС‰Сѓ РёРЅРІРµСЃС‚РѕСЂРѕРІ Рё РїР°СЂС‚РЅРµСЂРѕРІ, РіРѕС‚РѕРІС‹С… СЂР°Р·РґРµР»РёС‚СЊ СѓСЃРїРµС… РЅР° РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРј Рё РЅР°С†РёРѕРЅР°Р»СЊРЅРѕРј СѓСЂРѕРІРЅРµ.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#sponsorship" class="bg-brand-green text-black font-heading font-extrabold px-8 py-4 uppercase tracking-wider hover:bg-brand-greenHover transition-all flex items-center space-x-3 group">
+                            <span>РЎРїРѕРЅСЃРѕСЂСЃРєРёРµ РїР°РєРµС‚С‹</span>
+                            <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="tel:+79618035385" class="border border-brand-gray bg-brand-card hover:border-brand-green text-white font-heading font-bold px-8 py-4 uppercase tracking-wider transition-all flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-brand-green"></i>
+                            <span>+7 (961) 803-53-85</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Main Hero Photo -->
+                <div class="lg:col-span-5 fade-in-element">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-green to-emerald-600 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-1000"></div>
+                        <div class="relative rounded-lg overflow-hidden border border-brand-gray bg-brand-card">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Mountain Bike Racer" class="w-full h-[500px] object-cover filter grayscale hover:grayscale-0 transition-all duration-700">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6">
+                                <p class="text-xs font-mono text-brand-green uppercase tracking-widest">Р”РёСЃС†РёРїР»РёРЅР°</p>
+                                <p class="text-xl font-heading font-bold uppercase">РњР°СѓРЅС‚РёРЅР±Р°Р№Рє / РљСЂРѕСЃСЃ-РєР°РЅС‚СЂРё</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 bg-brand-card/50 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-8 border border-brand-gray bg-brand-card text-center box-glow transition-all rounded-sm fade-in-element">
+                    <div class="font-heading font-black text-6xl text-brand-green text-glow mb-2">
+                        <span class="stat-number" data-target="9">0</span>
+                    </div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider text-sm">Р›РµС‚ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕ РІ СЃРїРѕСЂС‚Рµ</p>
+                </div>
+
+                <div class="p-8 border border-brand-gray bg-brand-card text-center box-glow transition-all rounded-sm fade-in-element">
+                    <div class="font-heading font-black text-6xl text-brand-green text-glow mb-2">
+                        <span class="stat-number" data-target="50">0</span>+
+                    </div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider text-sm">РџРµСЂРІС‹С… РјРµСЃС‚ РЅР° РіРѕРЅРєР°С…</p>
+                </div>
+
+                <div class="p-8 border border-brand-gray bg-brand-card text-center box-glow transition-all rounded-sm fade-in-element">
+                    <div class="font-heading font-black text-6xl text-brand-green text-glow mb-2">
+                        <span class="stat-number" data-target="100">0</span>+
+                    </div>
+                    <p class="text-gray-400 font-semibold uppercase tracking-wider text-sm">РџРѕРґРёСѓРјРѕРІ Рё РЅР°РіСЂР°Рґ</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 fade-in-element">
+                    <h2 class="font-heading font-black text-3xl sm:text-5xl uppercase italic tracking-tight">
+                        Рћ РЎРїРѕСЂС‚СЃРјРµРЅРµ <span class="text-brand-green">&</span> Р¤РёР»РѕСЃРѕС„РёСЏ
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Р—Р° 9 Р»РµС‚ РІ РІРµР»РѕСЃРёРїРµРґРЅРѕРј СЃРїРѕСЂС‚Рµ СЏ РїСЂРѕС€С‘Р» РїСѓС‚СЊ РѕС‚ РїРµСЂРІС‹С… Р»РѕРєР°Р»СЊРЅС‹С… СЃС‚Р°СЂС‚РѕРІ РґРѕ СЃС‚Р°Р±РёР»СЊРЅС‹С… РїРѕР±РµРґ РЅР° РєСЂСѓРїРЅРµР№С€РёС… СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏС…. РљР°Р¶РґР°СЏ РіРѕРЅРєР° вЂ” СЌС‚Рѕ РїСЂРµРґРµР»СЊРЅР°СЏ РєРѕРЅС†РµРЅС‚СЂР°С†РёСЏ, С„РёР·РёС‡РµСЃРєР°СЏ РІС‹РЅРѕСЃР»РёРІРѕСЃС‚СЊ Рё РЅРµРїСЂРµСЂС‹РІРЅР°СЏ СЂР°Р±РѕС‚Р° РЅР°Рґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        РњРѕСЏ РіР»Р°РІРЅР°СЏ С†РµР»СЊ вЂ” Р·Р°РІРѕРµРІР°С‚СЊ РІС‹СЃС€РёРµ С‚РёС‚СѓР»С‹ Рё СЃС‚Р°С‚СЊ С‡РµРјРїРёРѕРЅРѕРј. Р”Р»СЏ РґРѕСЃС‚РёР¶РµРЅРёСЏ СЌС‚РѕР№ С†РµР»Рё РЅРµРѕР±С…РѕРґРёРјР° РїРѕРґРґРµСЂР¶РєР° СЃРёР»СЊРЅС‹С… РїР°СЂС‚РЅРµСЂРѕРІ, РіРѕС‚РѕРІС‹С… РёРЅРІРµСЃС‚РёСЂРѕРІР°С‚СЊ РІ СЃРїРѕСЂС‚ РІС‹СЃС€РёС… РґРѕСЃС‚РёР¶РµРЅРёР№ Рё РїРѕР»СѓС‡Р°С‚СЊ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ РјРµРґРёР№РЅСѓСЋ РѕС‚РґР°С‡Сѓ.
+                    </p>
+                    
+                    <div class="pt-4 flex items-center space-x-6 border-t border-brand-gray">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-mono">РљРѕРјР°РЅРґР°</p>
+                            <a href="https://www.instagram.com/cx_sestroretsk?stkn=NDR1MHVmMGdjcTgz" target="_blank" class="font-heading font-bold text-white hover:text-brand-green transition-colors flex items-center space-x-2 mt-1">
+                                <i class="fa-brands fa-instagram text-brand-green"></i>
+                                <span>CX Sestroretsk</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 fade-in-element">
+                    <div class="p-6 border border-brand-gray bg-brand-card">
+                        <i class="fa-solid fa-trophy text-3xl text-brand-green mb-4"></i>
+                        <h3 class="font-heading font-bold uppercase text-lg mb-2">РќР°С†РµР»РµРЅРЅРѕСЃС‚СЊ</h3>
+                        <p class="text-sm text-gray-400">РўРѕР»СЊРєРѕ РїРѕР±РµРґР° Рё РјР°РєСЃРёРјР°Р»СЊРЅС‹Рµ СЃРїРѕСЂС‚РёРІРЅС‹Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹ РЅР° РєР°Р¶РґРѕРј СЃС‚Р°СЂС‚Рµ.</p>
+                    </div>
+                    <div class="p-6 border border-brand-gray bg-brand-card">
+                        <i class="fa-solid fa-bullhorn text-3xl text-brand-green mb-4"></i>
+                        <h3 class="font-heading font-bold uppercase text-lg mb-2">РњРµРґРёР№РЅРѕСЃС‚СЊ</h3>
+                        <p class="text-sm text-gray-400">РђРєС‚РёРІРЅРѕРµ РІРµРґРµРЅРёРµ СЃРѕС†СЃРµС‚РµР№ Рё СЂРµРіСѓР»СЏСЂРЅРѕРµ РїСЂРѕРґРІРёР¶РµРЅРёРµ Р±СЂРµРЅРґРѕРІ СЃРїРѕРЅСЃРѕСЂРѕРІ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Offer Section -->
+    <section id="sponsorship" class="py-24 bg-brand-card/30 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-element">
+                <h2 class="font-heading font-black text-3xl sm:text-5xl uppercase italic tracking-tight mb-4">
+                    РџСЂРµРґР»РѕР¶РµРЅРёРµ РґР»СЏ <span class="text-brand-green">РЎРїРѕРЅСЃРѕСЂРѕРІ</span>
+                </h2>
+                <p class="text-gray-400 text-lg">
+                    РРЅРІРµСЃС‚РёС†РёРё РІ СЃРїРѕСЂС‚СЃРјРµРЅР° вЂ” СЌС‚Рѕ РїСЂСЏРјР°СЏ СЂРµРєР»Р°РјР° РІР°С€РµРіРѕ Р±СЂРµРЅРґР° РЅР° С†РµР»РµРІСѓСЋ Р°СѓРґРёС‚РѕСЂРёСЋ, РїСЂРµСЃС‚РёР¶ Рё СѓС‡Р°СЃС‚РёРµ РІ РїРѕР±РµРґР°С….
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Tier 1 -->
+                <div class="border border-brand-gray bg-brand-card p-8 flex flex-col justify-between box-glow transition-all fade-in-element">
+                    <div>
+                        <span class="text-xs font-mono uppercase text-gray-400 tracking-widest">РџР°РєРµС‚ 01</span>
+                        <h3 class="font-heading font-bold text-2xl uppercase mt-2 mb-6">РџР°СЂС‚РЅС‘СЂ</h3>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>Р Р°Р·РјРµС‰РµРЅРёРµ Р»РѕРіРѕС‚РёРїР° РЅР° СЌРєРёРїРёСЂРѕРІРєРµ Рё РІРµР»РѕСЃРёРїРµРґРµ</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>РЈРїРѕРјРёРЅР°РЅРёРµ Р±СЂРµРЅРґР° РІ РїРѕСЃС‚Р°С… РїРѕСЃР»Рµ РіРѕРЅРѕРє</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contacts" class="w-full text-center bg-brand-gray hover:bg-brand-green hover:text-black font-heading font-bold py-3 uppercase tracking-wider text-xs transition-all">РћР±СЃСѓРґРёС‚СЊ РґРµС‚Р°Р»Рё</a>
+                </div>
+
+                <!-- Tier 2 (Featured) -->
+                <div class="border-2 border-brand-green bg-brand-card p-8 flex flex-col justify-between box-glow transition-all relative transform md:-translate-y-4 fade-in-element">
+                    <div class="absolute -top-3 right-6 bg-brand-green text-black font-heading font-black text-[10px] uppercase tracking-widest px-3 py-1">
+                        Р РµРєРѕРјРµРЅРґСѓРµРјС‹Р№
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono uppercase text-brand-green tracking-widest">РџР°РєРµС‚ 02</span>
+                        <h3 class="font-heading font-bold text-2xl uppercase mt-2 mb-6">РћС„РёС†РёР°Р»СЊРЅС‹Р№ РЎРїРѕРЅСЃРѕСЂ</h3>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>РљСЂСѓРїРЅС‹Р№ Р»РѕРіРѕС‚РёРї РЅР° СЃРїРѕСЂС‚РёРІРЅРѕР№ С„РѕСЂРјРµ</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>Р РµРіСѓР»СЏСЂРЅС‹Рµ РїСѓР±Р»РёРєР°С†РёРё Рё РѕС‚РјРµС‚РєРё РІ Instagram</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>РџСЂРѕРјРѕ-РєРѕРЅС‚РµРЅС‚ Рё С„РѕС‚РѕСЃРµСЃСЃРёРё СЃ РІР°С€РёРј РїСЂРѕРґСѓРєС‚РѕРј</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contacts" class="w-full text-center bg-brand-green text-black font-heading font-extrabold py-3.5 uppercase tracking-wider text-xs hover:bg-brand-greenHover transition-all">РЎС‚Р°С‚СЊ СЃРїРѕРЅСЃРѕСЂРѕРј</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="border border-brand-gray bg-brand-card p-8 flex flex-col justify-between box-glow transition-all fade-in-element">
+                    <div>
+                        <span class="text-xs font-mono uppercase text-gray-400 tracking-widest">РџР°РєРµС‚ 03</span>
+                        <h3 class="font-heading font-bold text-2xl uppercase mt-2 mb-6">РўРёС‚СѓР»СЊРЅС‹Р№ РЎРїРѕРЅСЃРѕСЂ</h3>
+                        <ul class="space-y-4 text-sm text-gray-300 mb-8">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>Р­РєСЃРєР»СЋР·РёРІРЅРѕРµ Р±СЂРµРЅРґРёСЂРѕРІР°РЅРёРµ С„РѕСЂРјС‹ Рё С‚РµС…РЅРёРєРё</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>РџРѕР»РЅС‹Р№ РјРµРґРёР№РЅС‹Р№ РѕС…РІР°С‚ РІРѕ РІСЃРµС… СЃРѕС†РёР°Р»СЊРЅС‹С… СЃРµС‚СЏС…</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-brand-green mt-1"></i>
+                                <span>РЈС‡Р°СЃС‚РёРµ РІ РєРѕСЂРїРѕСЂР°С‚РёРІРЅС‹С… РјРµСЂРѕРїСЂРёСЏС‚РёСЏС… СЃРїРѕРЅСЃРѕСЂР°</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#contacts" class="w-full text-center bg-brand-gray hover:bg-brand-green hover:text-black font-heading font-bold py-3 uppercase tracking-wider text-xs transition-all">РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ СѓСЃР»РѕРІРёСЏ</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 fade-in-element">
+                <div>
+                    <h2 class="font-heading font-black text-3xl sm:text-5xl uppercase italic tracking-tight">
+                        Р“Р°Р»РµСЂРµСЏ <span class="text-brand-green">Р”СЂР°Р№РІР°</span>
+                    </h2>
+                    <p class="text-gray-400 mt-2">РљР°РґСЂС‹ СЃ СЃРѕСЂРµРІРЅРѕРІР°РЅРёР№ Рё С‚СЂРµРЅРёСЂРѕРІРѕС‡РЅРѕРіРѕ РїСЂРѕС†РµСЃСЃР°</p>
+                </div>
+                <a href="https://www.instagram.com/mirchik_1703?stkn=eHJuNjRpYW0yZzF5" target="_blank" class="mt-4 md:mt-0 text-brand-green hover:underline font-semibold flex items-center space-x-2">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Р‘РѕР»СЊС€Рµ РІ Instagram</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 fade-in-element">
+                <div class="h-80 overflow-hidden border border-brand-gray relative group">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="MTB Track 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-brand-green font-heading font-bold uppercase tracking-wider text-sm">Р“РѕРЅРєР° XC</span>
+                    </div>
+                </div>
+                <div class="h-80 overflow-hidden border border-brand-gray relative group">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623266010b?auto=format&fit=crop&w=600&q=80" alt="MTB Track 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-brand-green font-heading font-bold uppercase tracking-wider text-sm">РЎРєРѕСЂРѕСЃС‚СЊ</span>
+                    </div>
+                </div>
+                <div class="h-80 overflow-hidden border border-brand-gray relative group">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=80" alt="MTB Track 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-brand-green font-heading font-bold uppercase tracking-wider text-sm">РџРѕРґРіРѕС‚РѕРІРєР°</span>
+                    </div>
+                </div>
+                <div class="h-80 overflow-hidden border border-brand-gray relative group">
+                    <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=600&q=80" alt="MTB Track 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-brand-green font-heading font-bold uppercase tracking-wider text-sm">Р¤РёРЅРёС€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-24 bg-brand-card/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6 fade-in-element">
+                    <h2 class="font-heading font-black text-3xl sm:text-5xl uppercase italic tracking-tight">
+                        РЎРІСЏР·Р°С‚СЊСЃСЏ СЃРѕ <span class="text-brand-green">РњРЅРѕР№</span>
+                    </h2>
+                    <p class="text-gray-400">
+                        Р“РѕС‚РѕРІ РѕС‚РІРµС‚РёС‚СЊ РЅР° Р»СЋР±С‹Рµ РІРѕРїСЂРѕСЃС‹ РїРѕ РїРѕРІРѕРґСѓ СЃРїРѕРЅСЃРѕСЂСЃС‚РІР°, РјРµРґРёР№РЅС‹С… РёРЅС‚РµРіСЂР°С†РёР№ Рё РїР°СЂС‚РЅРµСЂСЃРєРёС… СѓСЃР»РѕРІРёР№.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <a href="tel:+79618035385" class="flex items-center space-x-4 p-4 border border-brand-gray bg-brand-card hover:border-brand-green transition-all">
+                            <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center text-brand-green text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">РўРµР»РµС„РѕРЅ</p>
+                                <p class="font-heading font-bold text-lg">+7 (961) 803-53-85</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/mirchik_1703?stkn=eHJuNjRpYW0yZzF5" target="_blank" class="flex items-center space-x-4 p-4 border border-brand-gray bg-brand-card hover:border-brand-green transition-all">
+                            <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center text-brand-green text-xl">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Р›РёС‡РЅС‹Р№ Instagram</p>
+                                <p class="font-heading font-bold text-lg">@mirchik_1703</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/cx_sestroretsk?stkn=NDR1MHVmMGdjcTgz" target="_blank" class="flex items-center space-x-4 p-4 border border-brand-gray bg-brand-card hover:border-brand-green transition-all">
+                            <div class="w-12 h-12 bg-brand-green/10 flex items-center justify-center text-brand-green text-xl">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">РљРѕРјР°РЅРґР°</p>
+                                <p class="font-heading font-bold text-lg">@cx_sestroretsk</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7 border border-brand-gray bg-brand-card p-8 fade-in-element">
+                    <form id="sponsorForm" class="space-y-6">
+                        <div>
+                            <label class="block text-xs uppercase font-mono text-gray-400 mb-2">Р’Р°С€Рµ РРјСЏ / РљРѕРјРїР°РЅРёСЏ</label>
+                            <input type="text" id="name" required placeholder="РРІР°РЅ РРІР°РЅРѕРІ" class="w-full bg-brand-black border border-brand-gray focus:border-brand-green text-white p-4 outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase font-mono text-gray-400 mb-2">РўРµР»РµС„РѕРЅ / Telegram</label>
+                            <input type="text" id="contact" required placeholder="+7 (999) 000-00-00" class="w-full bg-brand-black border border-brand-gray focus:border-brand-green text-white p-4 outline-none transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase font-mono text-gray-400 mb-2">РЎРѕРѕР±С‰РµРЅРёРµ / Р’Р°СЂРёР°РЅС‚ СЃРїРѕРЅСЃРѕСЂСЃС‚РІР°</label>
+                            <textarea id="message" rows="4" placeholder="Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, РјС‹ С…РѕС‚РёРј РѕР±СЃСѓРґРёС‚СЊ СЃРїРѕРЅСЃРѕСЂСЃС‚РІРѕ..." class="w-full bg-brand-black border border-brand-gray focus:border-brand-green text-white p-4 outline-none transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-green text-black font-heading font-black py-4 uppercase tracking-widest hover:bg-brand-greenHover transition-all shadow-[0_0_20px_rgba(0,255,102,0.3)]">
+                            РћС‚РїСЂР°РІРёС‚СЊ Р—Р°СЏРІРєСѓ
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-brand-gray bg-brand-black text-center text-xs text-gray-500">
+        <p>В© 2026 MIR1703. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹. MTB Athlete & Sponsorship Program.</p>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger number counter animation if inside stats block
+                    if (entry.target.querySelector('.stat-number')) {
+                        animateNumbers();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-element').forEach(el => observer.observe(el));
+
+        // Number Counter Animation
+        let animated = false;
+        function animateNumbers() {
+            if (animated) return;
+            animated = true;
+            document.querySelectorAll('.stat-number').forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+
+        // Form Redirect Handling
+        document.getElementById('sponsorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const contact = document.getElementById('contact').value;
+            const message = document.getElementById('message').value;
+
+            const text = `Р—Р°СЏРІРєР° РЅР° СЃРїРѕРЅСЃРѕСЂСЃС‚РІРѕ СЃ СЃР°Р№С‚Р°:%0AРРјСЏ/РљРѕРјРїР°РЅРёСЏ: ${encodeURIComponent(name)}%0AРљРѕРЅС‚Р°РєС‚: ${encodeURIComponent(contact)}%0AРЎРѕРѕР±С‰РµРЅРёРµ: ${encodeURIComponent(message)}`;
+            
+            // Redirect to WhatsApp with pre-filled message
+            window.open(`https://wa.me/79618035385?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
